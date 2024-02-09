@@ -1,0 +1,58 @@
+<!doctype html>
+<html>
+
+    <head>
+        <title>Página Principal</title>
+        <meta charset="utf-8">
+    </head>
+
+
+
+    <body>
+
+        <h2>Login</h2>
+        <form><!--Para criação de formulários-->
+            
+            Login:<br>
+            <input type="text" name="login"><br><!--digitar o nome-->
+
+            Senha:<br>
+            <input type="password" name="senha"><br><!--digitar a senha, a escrita nao fica amostra-->
+            <!--Dessa forma se cria uma caixa de texto-->
+
+            <!--Tambem pode-se criar um botão-->
+            <input type="button" value="Logar"><br>
+            <!--Poderia usar submit que significa enviar-->
+
+            
+        </form>
+        <h2>Cadastra-se</h2>
+        <form>
+            <!--Para marcar algo como o sexo por exemplo, usamos type="radio"-->
+            Login:<br>
+            <input type="text" name="login"><br>
+            Sexo:<br>
+            <input type="radio" name="sexo" value="M"> Masculino<br> 
+            <input type="radio" name="sexo" value="F"> Feminino<br>
+            <!--Colocar o mesmo name para os dois, para nao permitir marcar mais de 1-->
+            <!--Colocar o value para saber o que foi passado, já que o name é o mesmo-->
+
+            Interesses<br>
+            <input type="checkbox" name="interesses">Futebol<br>
+            <input type="checkbox" name="interesses">Cursos<br>
+
+            Estados<br>
+            <select name="estado"><!--Dessa forma é possivel colocar as opções para os usuarios escolherem-->
+                <option value="MG">MG</option>
+                <option value="RJ">RJ</option>
+                <option value="SP">SP</option>
+            </select><br>
+            <!--Podemos ter tambem <textarea>-->
+                Observações:<br>
+            <textarea></textarea>
+            <input type="submit" value="Cadastra-se"><br>
+
+        </form>
+    
+    </body>
+</html>

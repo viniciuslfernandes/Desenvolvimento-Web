@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Inline Style</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            #topo{
+                background: blue;
+            }
+            #conteudo{
+                background: gray;
+            }
+            #rodape{
+                background: green;
+            }
+            #assinatura{
+                background: pink;
+            }
+            .produto{
+                background: red;
+                margin: 10px;/*gera um espaçamento*/
+            }
+            
+        </style>
+    </head>
+    
+
+    <body>
+        <!--Para criar uma div utilizamos da seguinte forma-->
+        <div id="topo">
+            <img src="../Imagens/amazon.png" width="200" >
+            <ul>
+                <li>Home</li>
+                <li>Produtos</li>
+                <li>Contato</li>
+            </ul>
+        </div>
+       
+        <div id="conteudo">
+
+            <div class="produto">
+                Produto 1
+            </div>
+            <div class="produto">
+                Produto 2
+            </div>
+            <div class="produto">
+                Produto 3
+            </div>
+
+        </div>
+
+        <div id="rodape">
+            Todos os direitos reservados
+        </div>
+        <!--Percebe-se que a DIV ocupa toda a tela, enquanto o SPAN ocupa so o necessario-->
+        <!--Isso acontece pq a div coloca os elementos um abaixo do outro, enquanto o span coloca na mesma
+        linha, um na frente do outro-->
+        <span id="assinatura">
+            Vinicius
+        </span>
+        <span>
+            Lima
+        </span>
+    </body>
+</html>

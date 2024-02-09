@@ -1,0 +1,17 @@
+/*Modelo de caixa*/
+.conteudo{
+    border: 1px solid red;
+    padding-top: 20px; /*Espaçamento Interno superior*/
+    width: 150px; /*Largura*/
+    padding-right: 20px; /*dessa forma o pixels se somam 20px(padding-right) + 150px(width)*/
+    padding-bottom: 20px;/*Espaçamento inferior*/
+    padding-left: 20px;/*Espaçamento esquerdo */
+
+
+    margin-top: 20px; /*Espaçamento Exertono superior...*/
+   /*   margin: 20px;   margin: 20px 15px 10px 5px;*/ 
+
+   /*quando se tem uma "caixa" sendo aplicado uma margin de 20px inferior
+   e na caixa abaixo se tem uma margin de 30px superior, prevalece a maior margin,
+   o nome disso é "margin-collapse"*/
+}

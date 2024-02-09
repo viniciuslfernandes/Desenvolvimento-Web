@@ -1,0 +1,7 @@
+.texto{
+    /*Vamos supor que eu tenho duas paginas e quero alterar a cor por exemplo, tenho que ir 
+    em todas para poder alterar*/
+    /*Exemplo dado em css_externo_P1 e P2*/
+    color:white;
+    background: orange;
+}

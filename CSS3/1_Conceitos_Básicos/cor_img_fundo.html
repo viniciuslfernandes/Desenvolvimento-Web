@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Cor e Imagem de fundo</title>
+        <meta charset="utf-8">
+        <style type="text/css">
+            /*
+            Colocando fundo normal
+            .fundo{
+                background-color: gray;
+            }
+            */
+
+            /*Utilizando uma imagem como background*/
+            body{
+                /*Dessa forma, a imagem seria repetida varias vezes*/
+                background-image: url("../Imagens/yoshi.png");
+                
+                /*Usamos esse comando para controlar a repeticao*/
+                /*Temos: repeat, no-repeat, repeat-x, repeat-y*/
+                background-repeat: no-repeat;
+
+                /*Pode-se usar o seguinte comando*/
+                /*
+                fixed-> deixa a imagem fixa por toda pagina
+                scroll-> a imagem utiliza o scroll do mouse, ela some conforme vc mexe no scroll
+                */
+                background-attachment: fixed;
+
+                /*Temos tambem o que define a posicao da imagem na pagina*/
+                /*temos: center, left, right, top, bottom*/
+                /*Pode-se utilizar dois ao mesmo tempo dessa forma alinha primeiro na 
+                horizontal e depois na vertical, ex: right center;*/
+                background-position: center;
+
+                /*Utilizando tudo junto*/
+                
+            }
+
+            .fundo{
+                    background-color: gray;
+                }
+
+        </style>
+    </head>
+    
+
+    <body class="fundo">
+        <!--Titulo com fundo normal-->
+        <!--<h1 class="fundo">Conteúdo do Título</h1>-->
+        
+        <!--Imagem de fundo-->
+        <h1>Conteúdo do Título</h1>
+    </body>
+</html>

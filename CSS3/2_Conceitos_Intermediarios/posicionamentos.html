@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Posicionamentos (static, relative, absolute e fixed)</title>
+        <meta charset="utf-8">
+        
+        <style type="text/css">
+           
+           body{
+                background: #007fc7;
+           }
+           #container{
+                background: #fff;
+                width: 800px;
+                margin: 10px auto; /*dessa forma "auto" centraliza sempre*/
+                padding: 10px;
+            }
+
+
+            h1{
+                position: static;
+            }
+            p{
+                width: 300px;
+            }
+            
+            .relative{
+                border: 1px solid red;
+                position: relative;/*para podermos usar temos que usar propriedades de deslocamento*/
+                /*Temos top, right, bottom, left*/
+                top:20px;/*mudou 20px da posicao inicial padrao*/
+                left: 80px;/*muda 80px da posição inical padrão*/
+
+            }
+
+            .absolute{
+                position: absolute;
+                border: 1px solid red;
+            }
+
+            .fixed{
+                background: #f2f2f2;
+                border: 1px solid red;
+                position: fixed; /*tambem sai do fluxo*/
+            }
+
+        </style>
+    </head>
+
+
+    <body>
+       
+        <div id="container">
+            <h1>Posicionamentos</h1>
+            <p>
+                P1 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed ut massa in eros condimentum tempus vel vel dui. Suspendisse potenti. 
+                Aliquam erat volutpat. Curabitur venenatis finibus lacinia. Cras tristique arcu ligula, 
+                sit amet semper dui ultricies eget. Nunc leo leo, condimentum consectetur finibus et, 
+                laoreet sed magna. In sollicitudin purus sit amet porta vestibulum.
+            </p>
+            <!--<p class="relative">-->
+            <!--<p class="absolute">--><!--Com position:absolute os elementos se comportam como se 
+            nao houvesse nenhum elemento ali, é como se a estrutura que tem essa caracteristica
+            saisse do fluxo normal-->
+            <p class="fixed">
+                P2 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed ut massa in eros condimentum tempus vel vel dui. Suspendisse potenti. 
+                Aliquam erat volutpat. Curabitur venenatis finibus lacinia. Cras tristique arcu ligula, 
+                sit amet semper dui ultricies eget. Nunc leo leo, condimentum consectetur finibus et, 
+                laoreet sed magna. In sollicitudin purus sit amet porta vestibulum.
+            </p>
+            <p>
+                P3 Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                Sed ut massa in eros condimentum tempus vel vel dui. Suspendisse potenti. 
+                Aliquam erat volutpat. Curabitur venenatis finibus lacinia. Cras tristique arcu ligula, 
+                sit amet semper dui ultricies eget. Nunc leo leo, condimentum consectetur finibus et, 
+                laoreet sed magna. In sollicitudin purus sit amet porta vestibulum.
+            </p>
+        </div>
+    </body>
+</html>

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Elementos Flutuantes</title>
+        <meta charset="utf-8">
+
+        <style type="text/css">
+            .conteudo{
+                background: blue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+            }
+            .conteudo1{
+                background: blue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: right; /*elemento flutuante*/
+            }
+            .testeconteudo{
+                background: blue;
+                border: 1px solid gray;
+                width: 150px;
+                height: 150px;
+                float: left;
+            }
+
+            #principal{
+                background: green;
+                border: 5px solid red;
+            }
+            .clear{
+                clear: both;
+            }
+        </style>
+
+    </head>
+
+    <!--Depois que usamos os elementos flutuantes e vamos colocar um texto, percebemos que os textos ficam
+    em volta do elemento flutuante, para limpar esse fluxo devemos:-->
+    <!--Clear both significa ambos-->
+    <body>
+        <div id="principal">
+            <div class="testeconteudo">
+                Conteudo 1
+            </div>
+
+            <div class="testeconteudo">
+                Conteudo 2
+            </div>
+
+            <div class="testeconteudo">
+                Conteudo 3
+            </div>
+
+            <div class="clear"></div> <!--Dessa forma aparece o backgroud utilizado na div principal
+            se tirar essa class clear daqui, o background n vai aparecer-->
+        </div>
+
+        <p class="clear"><!--Para perceber a diferença tirar a classe e diminuir o tamanho do browser-->
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+            Sed ut massa in eros condimentum tempus vel vel dui. Suspendisse potenti. 
+            Aliquam erat volutpat. Curabitur venenatis finibus lacinia. Cras tristique arcu ligula, 
+            sit amet semper dui ultricies eget. Nunc leo leo, condimentum consectetur finibus et, 
+            laoreet sed magna. In sollicitudin purus sit amet porta vestibulum.
+        </p>
+    </body>
+
+</html>
