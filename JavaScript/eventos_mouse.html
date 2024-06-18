@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript</title>
+    <script>
+        function acao(){
+            alert('Evento disparado')
+        }
+
+        function acao1(){
+            alert('O elemento foi clicado')
+        }
+        
+        function acao2(){
+            alert('O mouse deixou a regiao do elemento')
+        }
+        
+        
+    </script>
+
+</head>
+<body>
+    <!-- <div onclick="acao()" style="background: #ccc; height: 150px; width: 150px"> --> <!-- UM click-->
+        <!-- <div ondblclick="acao()" style="background: #ccc; height: 150px; width: 150px"> --> <!--DUPLO click-->
+        <!-- <div onmouseup="acao()" style="background: #ccc; height: 150px; width: 150px"> --> <!-- AO SOLTAR click-->
+        <!-- <div onmouseover="acao()" style="background: #ccc; height: 150px; width: 150px"> --> <!--Ao passar acima -->
+        <!-- <div onmouseout="acao()" style="background: #ccc; height: 150px; width: 150px"> --> <!--Ao sair de cima -->
+        <div onclick="acao1()" onmouseout="acao2()" style="background: #ccc; height: 150px; width: 150px"> 
+            
+        </div>
+</body>
+</html>
