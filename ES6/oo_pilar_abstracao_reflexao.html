@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        //um software de marcenaria
+        //cadeira e sofa
+
+        //paradigma procedural
+
+        //cadeira
+        let qnt_pernas = 4
+        let giratoria = false
+        let cor = 'azul'
+
+        //array de cadeiras
+        let cadeiras = Array()
+        cadeiras[0] = Array()
+        cadeiras[0]['qntd_pernas'] = 4
+        cadeiras[0]['giratoria'] = false
+        cadeiras[0]['cor'] = 'azul'
+        
+        cadeiras[1] = Array()
+        cadeiras[1]['qntd_pernas'] = 1
+        cadeiras[1]['giratoria'] = true
+        cadeiras[1]['cor'] = 'vermelha'
+
+
+        function girar_cadeira(indice){
+            if(cadeiras[indice]['giratoria']===true){
+                console.log('Cadeira girou')
+            }else{
+                console.log('Cadeira nao é giratoria')
+                
+            }
+        }
+        
+        function adicionar_cadeira(qntd_pernas, giratoria, cor){
+            let cadeira = Array
+            cadeira['qntd_pernas']= qntd_pernas
+            cadeira['giratoria'] = giratoria
+            cadeira['cor'] = cor
+
+            cadeiras.push(cadeira)
+        }
+
+        //girar_cadeira(1)
+        
+        adicionar_cadeira(1, true, 'amarela' )
+
+        console.log(cadeiras)
+
+
+        //PARADIGMA DE ORIENTAÇÃO OBJETOS
+        class Cadeira{
+
+            constructor(qnt_pernas, giratoria, cor){
+                this.qnt_pernas = qnt_pernas
+                this.giratoria = giratoria
+                this.cor = cor
+            }
+
+            girarCadeira(){
+                if(this.giratoria === true){
+                    console.log('Cadeira girou')
+                }else{
+                    console.log('Cadeira nao é giratoria')
+                
+                }
+            }
+
+        }
+
+        let cadeira = new Cadeira(4, false, 'azul')
+        let cadeira2 = new Cadeira(1, true, 'amarela')
+        cadeira.girarCadeira()
+        cadeira2.girarCadeira()
+        console.log(cadeira)
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

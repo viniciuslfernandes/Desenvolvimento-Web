@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ES6</title>
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+
+    <script type="text/babel">
+        
+        function contarUmaHistoria(personagem='Fubá', atividade='Correr no parque', nome_dono='João'){
+            document.write(`Era uma vez um cachorro chamado ${personagem}, ele adorava ${atividade}, seu dono era o ${nome_dono} e eles viveram felizes para sempre`)
+        }
+        contarUmaHistoria(undefined, 'Enterrar osso' )//ao passar undefined, ele mantem o default, e ao não passar nada, também
+    </script>
+</head>
+<body>
+    <div id="output"></div>
+</body>
+</html>
